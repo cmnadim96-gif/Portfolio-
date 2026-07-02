@@ -100,7 +100,7 @@ export const portfolioData: PortfolioData = {
     facebook: "https://www.facebook.com/risedigital25",
     instagram: "https://www.instagram.com/rise_digital25/",
     youtube: "https://www.youtube.com/@RiseDigital25",
-    whatsapp: "https://wa.me/8801960492566",
+    whatsapp: "https://api.whatsapp.com/send?phone=8801960492566",
   },
   skills: [
     {

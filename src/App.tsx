@@ -1257,7 +1257,7 @@ export default function App() {
         <a
           href={socialLinks.whatsapp}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-[999] flex items-center gap-3 group"
           aria-label="Contact on WhatsApp"
         >
