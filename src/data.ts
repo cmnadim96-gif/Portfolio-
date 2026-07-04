@@ -86,7 +86,7 @@ export const portfolioData: PortfolioData = {
     englishName: "Nadim Hasan Chowdhury",
     title: "ডিজিটাল মার্কেটিং ও গ্রোথ স্পেশালিস্ট",
     subtitle: "ডাটা-ড্রাইভেন মার্কেটিং এবংROI-ভিত্তিক ক্যাম্পেইনের মাধ্যমে ব্যবসার দ্রুত সেলস ও ব্রান্ড ভ্যালু বৃদ্ধি করি।",
-    profileImage: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdK0n4-Jow4AczA7FcOsnqcUW8wx9yCqJwZwcHJKoaW-Sgv9yiADMB1Q7ozstS6AVvEg5265UpNcnz8DbxNg4pVLV3afhWc-O7VX82OzRfZUEmVlXa1DBCL809vj8VZwwf0MIg3ifkYI59W1pmb5pO2buxe-uqmm0t9aNtuqiGg5CzdpBR2DmSyms4DAZZ/s1600/Untitled_design__3_-removebg-preview.png",
+    profileImage: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDAj8fJBOuka74hqyLrRJ_obnRNCrs36PL5OSK9h-SF4RldqUKUf3Zt3PvT96x-fCLQP82xh0znNLBJtEg7g_imCSalNrO5OQRy61CcgcMQbmY4E336HXRoVKXiSj9ghtdChuCQY-oNM4rtqdC-tqqpeTSH2jp7Tob14MeY9kl_iVIBBBYgmYAbz_a2aqz/s1600/aifaceswap-cd016e7f1da8ebba4e86fc62c16c791b.jpg",
     phone: "01960-492566",
     email: "risedigitalads26@gmail.com",
     location: "ঢাকা, বাংলাদেশ",

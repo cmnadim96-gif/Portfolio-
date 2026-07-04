@@ -448,7 +448,7 @@ export default function App() {
                   referrerPolicy="no-referrer"
                   src={personalInfo.profileImage} 
                   alt={personalInfo.name} 
-                  className="absolute bottom-0 w-full h-[110%] object-contain select-none z-10 filter drop-shadow-[0_15px_15px_rgba(58,134,255,0.35)] hover:scale-105 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full object-cover select-none z-10 filter drop-shadow-[0_15px_15px_rgba(58,134,255,0.35)] hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
