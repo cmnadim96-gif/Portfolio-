@@ -275,13 +275,15 @@ export default function App() {
 
             {/* Right CTA Button (Desktop) */}
             <div className="hidden md:block">
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <a 
+                href={socialLinks.whatsapp || 'https://api.whatsapp.com/send?phone=8801960492566'}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#3a86ff] to-blue-600 hover:from-blue-600 hover:to-[#3a86ff] text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-md shadow-blue-500/10 hover:shadow-blue-500/20 transition-all duration-300 glow-btn flex items-center gap-2 cursor-pointer"
               >
                 <span>ফ্রি কনসালটেশন</span>
                 <ArrowUpRight className="w-4 h-4" />
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -317,13 +319,15 @@ export default function App() {
                   {link.label}
                 </button>
               ))}
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="w-full bg-gradient-to-r from-[#3a86ff] to-blue-600 text-white px-5 py-3 rounded-xl text-center text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 mt-2 flex items-center justify-center gap-2"
+              <a 
+                href={socialLinks.whatsapp || 'https://api.whatsapp.com/send?phone=8801960492566'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-gradient-to-r from-[#3a86ff] to-blue-600 text-white px-5 py-3 rounded-xl text-center text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 mt-2 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>ফ্রি কনসালটেশন</span>
                 <ArrowUpRight className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </div>
         )}
