@@ -22,7 +22,8 @@ import {
   Users,
   Award,
   Clock,
-  Briefcase
+  Briefcase,
+  ZoomIn
 } from 'lucide-react';
 
 export default function App() {
@@ -123,6 +124,7 @@ export default function App() {
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const validateForm = () => {
     const errors: Record<string, string> = {};
@@ -704,6 +706,96 @@ export default function App() {
 
             </div>
 
+          </div>
+
+          {/* Our Products Section - Fully Centered */}
+          <div className="mt-20 pt-16 border-t border-white/5">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#3a86ff] mb-4">
+                <span>এক্সক্লুসিভ অফার</span>
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight flex items-center justify-center gap-3">
+                <span className="w-1.5 h-8 bg-[#3a86ff] rounded-full inline-block"></span>
+                <span>আমাদের প্রোডাক্ট সমূহ</span>
+              </h3>
+              <p className="text-sm sm:text-base text-gray-400 mt-4 leading-relaxed">
+                আপনার বিজনেসের সেলস ও কার্যকারিতা বাড়াতে আমাদের প্রিমিয়াম ডিজিটাল প্যাকেজসমূহ।
+              </p>
+            </div>
+            
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Product 1: CapCut */}
+              <div className="glass-card rounded-2xl p-5 border border-white/10 hover:border-[#3a86ff]/30 shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col justify-between group">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#3a86ff] to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div>
+                  <div 
+                    onClick={() => setLightboxImage("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtfE37xlbfmYO0sEijmo6IlQvy9Wt_7mnqhD9xsv3vVgKw1k1xoaZU287JvXE9ONUafBcDiEaAR_kMrMIlq54jcm8S0a_HEGXz0rMN2BtpBpHigTWo-eznp6dSQ0BzTuQkgwdHi-32641JUzBEPfDc_bKSHrd7C_r4pxuC3iZSPeghNGFOpNss8vZSBKVa/s1600/ChatGPT%20Image%20Jul%2011,%202026,%2009_17_07%20PM.png")}
+                    className="rounded-xl overflow-hidden mb-5 bg-black/40 aspect-[1195/1316] relative flex items-center justify-center cursor-pointer group/img shadow-md hover:shadow-lg transition-all"
+                  >
+                    <img 
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtfE37xlbfmYO0sEijmo6IlQvy9Wt_7mnqhD9xsv3vVgKw1k1xoaZU287JvXE9ONUafBcDiEaAR_kMrMIlq54jcm8S0a_HEGXz0rMN2BtpBpHigTWo-eznp6dSQ0BzTuQkgwdHi-32641JUzBEPfDc_bKSHrd7C_r4pxuC3iZSPeghNGFOpNss8vZSBKVa/s1600/ChatGPT%20Image%20Jul%2011,%202026,%2009_17_07%20PM.png" 
+                      alt="capcut pro pc lifetime Access" 
+                      className="w-full h-full object-cover rounded-xl select-none group-hover/img:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-black/0 group-hover/img:bg-black/50 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover/img:opacity-100 text-white gap-2 p-3 text-center">
+                      <div className="bg-white/10 p-3 rounded-full backdrop-blur-md border border-white/20">
+                        <ZoomIn className="w-6 h-6 text-white" />
+                      </div>
+                      <span className="text-xs font-semibold bg-slate-950/80 px-3 py-1.5 rounded-full border border-white/10">বড় করে দেখতে ক্লিক করুন</span>
+                    </div>
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2 group-hover:text-[#3a86ff] transition-colors">capcut pro pc lifetime Access</h4>
+                  <p className="text-sm text-gray-400 mb-6 leading-relaxed">পিসি বা ল্যাপটপের জন্য ক্যাপকাট প্রো এর লাইফটাইম ফুল অ্যাক্টিভেটেড প্রিমিয়াম প্যাকেজ। পেশাদার ভিডিও এডিটিংয়ের সেরা ফিচারসমূহ সরাসরি ব্যবহারের সুযোগ।</p>
+                </div>
+                <a 
+                  href={`https://api.whatsapp.com/send?phone=8801960492566&text=${encodeURIComponent('হ্যালো Nadim, আমি আপনার "capcut pro pc lifetime Access" প্যাকেজটি অর্ডার করতে চাই।')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#25d366] hover:bg-[#20ba5a] text-white py-3.5 rounded-xl text-center text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer mt-auto shadow-md hover:shadow-emerald-500/25 animate-pulse-subtle"
+                >
+                  <i className="fa-brands fa-whatsapp text-base"></i>
+                  <span>অর্ডার করুন</span>
+                </a>
+              </div>
+
+              {/* Product 2: Facebook Page / Landing Page Combo */}
+              <div className="glass-card rounded-2xl p-5 border border-white/10 hover:border-[#3a86ff]/30 shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col justify-between group">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#3a86ff] to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div>
+                  <div 
+                    onClick={() => setLightboxImage("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI8dcB4RRy-aZdEsau7HDBm0kI3iqPGP8dix-JPKhZk15AbxGM6u77f-qomY_tw_oVugUBFenkVGL6d_ilTzH3vMaK8E6vw8MgMx1tixdHUWpLGqPVHx-8OtKR47U7NEUX8smVNyJGlrRxNj9kBFH0nS1LBlAp5pQ6U4Qgo7PgwRogafMgdlMz52W4RYbY/s1600/01960-492566.jpg")}
+                    className="rounded-xl overflow-hidden mb-5 bg-black/40 aspect-[1195/1316] relative flex items-center justify-center cursor-pointer group/img shadow-md hover:shadow-lg transition-all"
+                  >
+                    <img 
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI8dcB4RRy-aZdEsau7HDBm0kI3iqPGP8dix-JPKhZk15AbxGM6u77f-qomY_tw_oVugUBFenkVGL6d_ilTzH3vMaK8E6vw8MgMx1tixdHUWpLGqPVHx-8OtKR47U7NEUX8smVNyJGlrRxNj9kBFH0nS1LBlAp5pQ6U4Qgo7PgwRogafMgdlMz52W4RYbY/s1600/01960-492566.jpg" 
+                      alt="ল্যান্ডিং পেজ কম্বো প্যাকেজ" 
+                      className="w-full h-full object-cover rounded-xl select-none group-hover/img:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-black/0 group-hover/img:bg-black/50 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover/img:opacity-100 text-white gap-2 p-3 text-center">
+                      <div className="bg-white/10 p-3 rounded-full backdrop-blur-md border border-white/20">
+                        <ZoomIn className="w-6 h-6 text-white" />
+                      </div>
+                      <span className="text-xs font-semibold bg-slate-950/80 px-3 py-1.5 rounded-full border border-white/10">বড় করে দেখতে ক্লিক করুন</span>
+                    </div>
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2 group-hover:text-[#3a86ff] transition-colors">ল্যান্ডিং পেজ কম্বো প্যাকেজ</h4>
+                  <p className="text-sm text-gray-400 mb-6 leading-relaxed">আপনার বিজনেসের লিড ও কাস্টমার জেনারেশন বহুগুণ বাড়াতে প্রফেশনাল ও রেসপন্সিভ হাই-কনভার্টিং ল্যান্ডিং পেজ ডিজাইন কম্বো প্যাক।</p>
+                </div>
+                <a 
+                  href={`https://api.whatsapp.com/send?phone=8801960492566&text=${encodeURIComponent('হ্যালো Nadim, আমি আপনার "ল্যান্ডিং পেজ কম্বো প্যাকেজ" প্যাকটি অর্ডার করতে চাই।')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#25d366] hover:bg-[#20ba5a] text-white py-3.5 rounded-xl text-center text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer mt-auto shadow-md hover:shadow-emerald-500/25 animate-pulse-subtle"
+                >
+                  <i className="fa-brands fa-whatsapp text-base"></i>
+                  <span>অর্ডার করুন</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1292,6 +1384,35 @@ export default function App() {
             </svg>
           </div>
         </a>
+      )}
+
+      {/* Lightbox / Zoom Modal */}
+      {lightboxImage && (
+        <div 
+          className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/95 backdrop-blur-md p-4 transition-all duration-300"
+          onClick={() => setLightboxImage(null)}
+        >
+          <div className="absolute top-4 right-4 z-[1010]">
+            <button 
+              onClick={() => setLightboxImage(null)}
+              className="bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 border border-white/10 flex items-center justify-center cursor-pointer shadow-lg"
+              aria-label="Close image viewer"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+          <div 
+            className="relative max-w-full max-h-[85vh] md:max-h-[92vh] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center border border-white/10 p-1 bg-zinc-900/50"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img 
+              src={lightboxImage} 
+              alt="প্রোডাক্ট প্রিভিউ" 
+              className="max-w-full max-h-[80vh] md:max-h-[88vh] object-contain rounded-xl select-none"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+        </div>
       )}
 
     </div>
